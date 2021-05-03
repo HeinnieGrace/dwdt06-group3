@@ -51,7 +51,7 @@
 	}
 	.top {
 		grid-area: top;
-		margin: 0 30px;
+		margin: 0 10px;
 	}
 	.top p {
 		font-size: 1.2em;
