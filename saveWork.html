@@ -59,7 +59,7 @@
 			flex-direction: row;
 			justify-content: center;
 			background-color: lightgrey;
-			padding: 60px;
+			padding: 50px;
 		}
 		#preview {
 			height: 580px;
@@ -76,8 +76,9 @@
 			background-color: white;
 			padding: 10px 25px 10px 25px;
 			height: 230px;
-			width: 180px;
+			width: 200px;
 			font-size: 1.2em;
+			font-family: serif !important;
 		}
 		aside button {
 			background-color: lightgrey;
@@ -100,6 +101,15 @@
 		label {
 			line-height: 30px;
 		}
+		input, textarea {
+			border-color: transparent;
+			text-align: center;
+			margin: auto;
+			width: 200px;
+		}
+		/*#save {
+			padding: 0px;
+		}*/
 	</style>
 	<script type="text/javascript">
 		function loadMe(){
@@ -180,13 +190,12 @@
 		<br>
 		<br>
 		<div id="empty" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-		<br>
-		<br>
+		<br><br>
 		<div><input type="text" name="description" id="description" placeholder="[ Bride Names / Class of ]"></div>
 		<br>
-		<div><input type="text" name="date" id="date" placeholder="[ Date ]"></div>
+		<div><input type="date" name="date" id="date" placeholder="[ Date ]"></div>
 		<br>
-		<div><input type="text" name="time" id="time" placeholder="[ Time ]"></div>
+		<div><input type="time" name="time" id="time" placeholder="[ Time ]"></div>
 		<br>
 		<div><textarea type="text" name="address" id="address" placeholder="[ Address ]"></textarea></div>
 		<br>
@@ -194,7 +203,7 @@
 		<button onclick="loadData()">Load</button>
 		</div>
 		<aside>
-			<p>Save your work as:</p>
+			<p id="save">Save your work as:</p>
 			<input type="radio" name="saveAs" id="pdf">
 				<label for="pdf">PDF</label>
 				<br>

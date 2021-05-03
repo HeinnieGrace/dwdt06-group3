@@ -93,6 +93,13 @@
 			background-color: #8774a4;
 			color: white;
 		}
+		input, textarea {
+			border-color: transparent;
+			text-align: center;
+			margin: auto;
+			width: 200px;
+		}
+		
 	</style>
 	<script type="text/javascript">
 		function loadMe(){
@@ -177,14 +184,14 @@
 		<br>
 		<div><input type="text" name="description" id="description" placeholder="[ Bride Names / Class of ]"></div>
 		<br>
-		<div><input type="text" name="date" id="date" placeholder="[ Date ]"></div>
+		<div><input type="date" name="date" id="date" placeholder="[ Date ]"></div>
 		<br>
-		<div><input type="text" name="time" id="time" placeholder="[ Time ]"></div>
+		<div><input type="time" name="time" id="time" placeholder="[ Time ]"></div>
 		<br>
 		<div><textarea type="text" name="address" id="address" placeholder="[ Address ]"></textarea></div>
 		<br>
 		<br>
-		<button onclick="loadData()">Load</button>
+		<button onclick="loadData()">Add favourite</button>
 		</div> <!-- local storage -->
 		<aside>
 			<p id="saved">Your work has been saved.</p>

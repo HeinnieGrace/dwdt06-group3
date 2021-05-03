@@ -1,5 +1,4 @@
 <link rel="shortcut icon" href="logo.png">
-	<style type="text/css">
 		* {
 			font-family: Lucidatypewriter;
 			cursor: pointer;
@@ -9,9 +8,8 @@
 			background-color: lightgrey;
 		}
 		.topnav {
-			/*overflow: hidden;*/
+			overflow: hidden;
 			text-align: center;
-			margin-bottom: 10px;
 		}
 
 		.topnav a {
@@ -23,7 +21,6 @@
 			display: inline;
 			color: black;
 			background-color: #8774a4;
-
 		}
 
 		.topnav a:hover {
@@ -68,11 +65,6 @@
 			border: 1px solid;
 			border-radius: 10px;
 			box-shadow: 0 5px;
-			margin-bottom: 10px;
-
-		}
-		.categories a {
-			text-decoration: none;
 		}
 
 		.categories button:hover {
@@ -88,9 +80,44 @@
 			font-size: 20px;
 		}
 
-		footer {
+		.footer {
 			position: sticky;
 			color: black;
+			
 		}
+		.logo, footer{
+			animation: mover 10s infinite;
+			animation-timing-function: ease;}
+		@keyframes mover {
+			from {
+				transform: translate(0);
+			}
+			to {
+				transform: translateX(100%);
+			}
+		}
+		@media  screen and (max-width: 600px) {
+			.topnav a {
+				font-size: 1em;
+			}
+			.top a {
+				font-size: 1.2em;
+			}
+			.categories {
+				display: flex;
+				flex-direction: column;
+				
 
-	</style>
+			}
+			.categories button {
+				margin: auto;
+				margin-bottom: 10px;
+
+			}
+			.categories a {
+				font-size: 0.8em;
+			}
+			.top, .categories {
+				margin: 20px;
+			}
+		}
